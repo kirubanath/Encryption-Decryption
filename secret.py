@@ -14,7 +14,7 @@ s = list(s)
 value_dic = dict([(y,x) for (x,y) in enumerate(low_Str)]) #a is 0, b is 1 and so on!
 
 #creating a displacement substitution dictionary:
-disp = 5 #assume for this case
+disp = 5 #assume for this casea
 s = s[5:]+s[:5]
 d_disp = dict(zip(low_Str,s))  
 
@@ -379,6 +379,7 @@ def main():
     """
         VIGENERE ENCRYPTION:
     """
+    print("\nfor the next test lets do vigenere encryption:")
     p = 'kirubananth'
     print('do you want to give the password for encryption: y/n')
     i = input()
@@ -409,7 +410,7 @@ def main():
         print(a)
     elif i =='n':
         print('moving on!\n')
-        
+
     print("let us check if the decrypted string is same as the original:")
     print(b==sherlock) #checking if the decrypter message is same as original
     print("\n")
